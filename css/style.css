@@ -3,3 +3,64 @@
   margin: 0;
   padding: 0;
 }
+/* DEBUG */
+.bg_lgrey{
+  background-color: lightgrey;
+}
+
+.bg_pink{
+  background-color: pink;
+}
+
+.bg_aqua{
+  background-color: aqua;
+}
+/* MIX */
+.wrapper-page{
+  height: 100vh;
+}
+/* MAIN */
+main{
+  display: flex;
+  height: calc(100% - 90px);
+  background-color: black;
+}
+
+/* Aside */
+.side-menu{
+  width: 300px;
+  height: 100%;
+}
+
+/* Main content */
+.main-content{
+  height: 100%;
+  width: calc(100% - 300px);
+  overflow-y: auto;
+}
+/* FOOTER */
+.footer-player{
+  height: 90px;
+  background-color: grey;
+}
+
+/* RESPONSIVE */
+
+/* Extra Small <576px */
+@media screen and (max-width: 576px){
+  .side-menu{
+    width: 50px;
+  }
+  .main-content{
+    width: calc(100% - 50px)
+  }
+}
+/* Small <768px */
+@media screen and (max-width: 768px){
+
+}
+
+/* Medium <992px */
+@media screen and (max-width: 992px){
+
+}
