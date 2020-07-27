@@ -19,11 +19,31 @@
 .wrapper-page{
   height: 100vh;
 }
+
+/* Button */
+.btn{
+  color: #fff;
+  text-decoration: none;
+
+}
 /* MAIN */
 main{
   display: flex;
   height: calc(100% - 90px);
   background-color: black;
+}
+
+/* Upgrade bar */
+.upgrade{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 90px;
+  width: calc(100% - 300px);
+  background-color: rgba(0, 0, 0, 0.5)
 }
 
 /* Aside */
