@@ -145,7 +145,7 @@ overflow: hidden;
 
 .time-bar{
   height: 5px;
-  width: 100%;
+  width: 400px;
   background-color: red;
 }
 /* RESPONSIVE */
