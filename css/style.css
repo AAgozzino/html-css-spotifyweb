@@ -30,6 +30,9 @@
   list-style: none;
 }
 
+.child-inline > *{
+  display: inline-block;
+}
 .m-bottom-30{
   margin-bottom: 30px;
 }
@@ -133,10 +136,18 @@ overflow: hidden;
 
 /* FOOTER */
 .footer-player{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   height: 90px;
   background-color: grey;
 }
 
+.time-bar{
+  height: 5px;
+  width: 100%;
+  background-color: red;
+}
 /* RESPONSIVE */
 
 /* Medium <992px */
