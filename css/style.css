@@ -143,10 +143,32 @@ overflow: hidden;
   background-color: grey;
 }
 
+.player{
+  width: 60%;
+}
+.player-timer{
+  width: 60%;
+  margin: auto;
+}
+.player-timer .time, .time-lenght{
+  width: 10%;
+}
+.time-bar-wrapper{
+  width: 70%;
+  margin: auto;
+}
 .time-bar{
   height: 5px;
-  width: 400px;
+  width: 100%;
   background-color: red;
+  vertical-align: middle;
+  border-radius: 2px;
+}
+.time-bar-progres{
+  height: 100%;
+  width: 40%;
+  background-color: green;
+  border-radius: 2px;
 }
 /* RESPONSIVE */
 
@@ -155,6 +177,10 @@ overflow: hidden;
   .box{
     width: 25%;
   }
+
+  /* .time-bar{
+    width: 300px;
+  } */
 }
 
 /* Small <768px */
@@ -162,6 +188,10 @@ overflow: hidden;
   .box{
     width: 50%;
   }
+
+  /* .time-bar{
+    width: 150px;
+  } */
 }
 
 /* Extra Small <576px */
@@ -180,4 +210,8 @@ overflow: hidden;
   .box{
     width: 50%;
   }
+
+  /* .time-bar{
+    width: 100px;
+  } */
 }
