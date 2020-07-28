@@ -10,6 +10,7 @@
 
 .bg_pink{
   background-color: pink;
+  border: 1px solid black;
 }
 
 .bg_aqua{
@@ -33,6 +34,34 @@ main{
   background-color: black;
 }
 
+/* Aside */
+.side-menu{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 100%;
+}
+.logo{
+  height: 90px;
+}
+.menu-playlist{
+height: 100%;
+overflow: hidden;
+}
+.playlist{
+overflow-y: auto;
+}
+/* Menu bottom profile */
+.aside-bottom{
+  margin-top:auto;
+  width: 100%;
+}
+.profile img, h3{
+  display: inline-block;
+}
+
+/* Main content */
+
 /* Upgrade bar */
 .upgrade{
   display: flex;
@@ -45,14 +74,6 @@ main{
   width: calc(100% - 300px);
   background-color: rgba(0, 0, 0, 0.5)
 }
-
-/* Aside */
-.side-menu{
-  width: 300px;
-  height: 100%;
-}
-
-/* Main content */
 .main-content{
   height: 100%;
   width: calc(100% - 300px);
