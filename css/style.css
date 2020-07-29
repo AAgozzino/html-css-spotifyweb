@@ -64,6 +64,7 @@
 }
 .box h4{
   color: #fff;
+  margin: 5px 0;
 }
 .box h5{
   font-weight: 500;
@@ -75,20 +76,29 @@
   width: 100%;
 }
 .box-image .overlay{
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: red;
+  background-color: rgba(0,0,0, 0.5);
   height: 100%;
   width: 100%;
 }
 .overlay .fa-play-circle{
-  
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: #fff;
 }
 .image-circle{
   border-radius: 50%;
+  overflow: hidden;
 }
-
+.box:hover .overlay{
+  display: inline-block;
+}
 /* Button */
 .btn{
   color: #fff;
