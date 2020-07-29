@@ -16,7 +16,7 @@
         <aside class="side-menu bg-black">
           <!-- logo -->
           <div class="logo">
-            <img class="logo-big" src="img/logo.svg" alt="Logo Spotify">
+            <img class="logo-big xs-d-none" src="img/logo.svg" alt="Logo Spotify">
             <img class="logo-small" src="img/logo-small.svg" alt="">
           </div>
           <!-- /logo -->
@@ -26,22 +26,22 @@
             <ul class="main-nav-list">
               <li class="m-top-10">
                 <img src="img/home.svg" alt="Icona home">
-                <a href="#">Home</a>
+                <a class="xs-d-none" href="#">Home</a>
               </li>
               <li class="m-top-10">
                 <img src="img/search.svg" alt="Icona cerca">
-                <a href="#">Cerca</a>
+                <a class="xs-d-none" href="#">Cerca</a>
               </li>
               <li class="m-top-10">
                 <img src="img/libreria.svg" alt="Icona libreria">
-                <a href="#">La tua libreria</a>
+                <a class="xs-d-none" href="#">La tua libreria</a>
               </li>
             </ul>
           </nav>
           <!-- /main menu -->
 
           <!-- menu playlist -->
-          <div class="menu-playlist">
+          <div class="menu-playlist xs-d-none">
             <div class="playlist-title">
               <h3>PLAYLIST</h3>
               <a href="#">
@@ -63,12 +63,15 @@
           <!-- /menu playlist -->
 
           <!-- menu bottom profile -->
-          <div class="aside-bottom bg_pink">
-            <a href="#"> ICONA Installa app</a>
-            <hr>
+          <div class="aside-bottom">
+            <a href="#">
+              <img src="img/download.svg" alt="Icona download">
+              <span class="xs-d-none">Installa app</span>
+            </a>
+            <hr class="xs-d-none">
             <div class="profile">
-              <img src="#" alt="Icona profilo">
-              <h3>John Doe</h3>
+              <img src="img/profile.svg" alt="Icona profilo">
+              <h3 class="xs-d-none">John Doe</h3>
             </div>
           </div>
           <!-- /menu bottom profile -->

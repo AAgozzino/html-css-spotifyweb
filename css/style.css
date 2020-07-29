@@ -74,6 +74,10 @@
 .btn{
   color: #fff;
   text-decoration: none;
+  border: 1px solid #fff;
+  border-radius: 50px;
+  margin-right: 30px;
+  padding: 15px 30px;
 
 }
 
@@ -155,8 +159,22 @@ overflow: hidden;
   width: 100%;
   flex-shrink: 0;
 }
+
+.aside-bottom img{
+  height: 14px;
+  vertical-align: middle;
+}
+.aside-bottom hr{
+  margin-top: 5px;
+}
 .profile > img, .profile > h3{
   display: inline-block;
+}
+.profile img{
+  height: 30px;
+  background-color: #808080;
+  border-radius: 50%;
+  margin-top: 5px;
 }
 
 /* Main content */
@@ -246,23 +264,20 @@ overflow: hidden;
 /* Extra Small <576px */
 @media screen and (max-width: 576px){
   /* ASIDE */
+  .xs-d-none{
+    display: none;
+  }
   .side-menu{
     width: 50px;
   }
   .logo{
     height: auto;
   }
-  .logo-big{
-    display: none;
-  }
   .logo-small{
     display: block;
   }
-  .main-nav-list li >a{
-    display: none;
-  }
-  .menu-playlist{
-    display: none;
+  .aside-bottom a > img{
+    margin: auto;
   }
 
   /* MAIN CONTENT */
