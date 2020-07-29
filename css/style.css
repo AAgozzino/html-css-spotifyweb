@@ -20,6 +20,7 @@
 .bg_grey{
   background-color: grey;
 }
+
 /* MIX */
 .wrapper-page{
   height: 100vh;
@@ -33,9 +34,24 @@
 .child-inline > *{
   display: inline-block;
 }
+
+.m-top-10{
+  margin-top: 10px;
+}
 .m-bottom-30{
   margin-bottom: 30px;
 }
+
+.bg-grey{
+  background-color: #282828;
+}
+.bg-greyblue{
+  background-color: #141922;
+}
+.bg-black{
+  background-color: #000;
+}
+
 /* Row song */
 .row-flex{
   display: flex;
@@ -60,6 +76,19 @@
   text-decoration: none;
 
 }
+
+/* TYPOGRAPHY */
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #A3A3A3;
+}
+
+a{
+  text-decoration: none;
+  color: #A3A3A3;
+}
+
 /* MAIN */
 main{
   display: flex;
@@ -73,15 +102,25 @@ main{
   flex-direction: column;
   width: 300px;
   height: 100%;
+  padding: 10px;
   overflow-y: hidden;
 }
 .logo{
   height: 90px;
   flex-shrink: 0;
 }
+.logo-small{
+  display: none;
+}
+
 .main-nav{
   flex-shrink: 0;
 }
+.main-nav-list li img{
+  height: 30px;
+  vertical-align: middle;
+}
+
 .menu-playlist{
 height: 100%;
 overflow: hidden;
@@ -140,21 +179,17 @@ overflow: hidden;
   justify-content: space-between;
   align-items: center;
   height: 90px;
-  background-color: grey;
 }
 
 .player{
   width: 60%;
 }
-.player-timer{
-  width: 60%;
-  margin: auto;
-}
+
 .player-timer .time, .time-lenght{
   width: 10%;
 }
 .time-bar-wrapper{
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 .time-bar{
@@ -196,10 +231,24 @@ overflow: hidden;
 
 /* Extra Small <576px */
 @media screen and (max-width: 576px){
-
+  /* ASIDE */
   .side-menu{
     width: 50px;
   }
+  .logo{
+    height: auto;
+  }
+  .logo-big{
+    display: none;
+  }
+  .logo-small{
+    display: block;
+  }
+  .main-nav-list li >a{
+    display: none;
+  }
+
+  /* MAIN CONTENT */
   .main-content{
     width: calc(100% - 50px);
   }
