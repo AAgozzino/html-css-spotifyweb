@@ -62,13 +62,32 @@
   padding: 10px;
   text-align: center;
 }
-.box img{
+.box h4{
+  color: #fff;
+}
+.box h5{
+  font-weight: 500;
+}
+.box-image{
+  position: relative;
+}
+.box-image img{
   width: 100%;
+}
+.box-image .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  height: 100%;
+  width: 100%;
+}
+.overlay .fa-play-circle{
+  
 }
 .image-circle{
   border-radius: 50%;
 }
-
 
 /* Button */
 .btn{
@@ -85,7 +104,12 @@
 body{
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
+  font-weight: 500;
   color: #A3A3A3;
+}
+
+h2{
+  color: #fff;
 }
 
 h3{
@@ -197,13 +221,14 @@ overflow: hidden;
 }
 /* Navbar menu content */
 .menu-content{
-  margin-top: 90px;
+  margin-top: 100px;
   text-align: center;
 }
-
 .menu-content ul li{
-  padding: 10px;
+  padding: 5px;
 }
+
+
 
 /* FOOTER */
 .footer-player{
